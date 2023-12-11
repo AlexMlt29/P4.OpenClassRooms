@@ -1,8 +1,85 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$third-color: #99E2D0;
+.app {
+    &__header {
+        width: 100%;
+        height: 113px;
+        display: flex;
+        align-items: center;
+    }
 
-body {
-    background-color: $primary-color;
-    display: flex;
+    &__logo-container {
+        height: 63px;
+    }
+
+    &__logo {
+        height: 36px;
+    }
+
+    &__title {
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    &__description {
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    &__explore-button {
+        background-color: #56CCF2;
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-icon {
+                font-size: 2em;
+            }
+
+            &-text {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__restaurants {
+        display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+    .restaurant {
+        flex: 1 1 150px; // Chaque élément de restaurant prendra au moins 150px et grandira pour occuper l'espace disponible.
+
+        &__image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            // Ajoutez votre code CSS supplémentaire ici pour l'image
+        }
+
+        &__name {
+            font-weight: bold;
+            // Ajoutez votre code CSS supplémentaire ici pour le nom
+        }
+
+        &__info {
+            color: #666;
+            // Ajoutez votre code CSS supplémentaire ici pour l'info
+        }
+    }
+    }
 }
