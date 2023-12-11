@@ -53,66 +53,112 @@ body {
   width: 12px;
 }
 
-.app {
-  /***********************/
+h1 {
+  margin: 0px;
 }
+
+.color-first-second-choice {
+  color: #7E7E7E;
+}
+
+.color-third-choice {
+  color: #9356DC;
+}
+
 .app__first-section {
+  width: 100%;
+  height: 287px;
   flex-direction: column;
+  background-color: #F6F6F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__first-section-title {
+  width: 275px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .app__title {
-  font-size: 1.5em;
-  color: #333;
+  margin: 0px;
+  font-weight: 700;
+  text-align: center;
 }
-.app__description {
-  color: #666;
-  margin-bottom: 20px;
-}
-.app__explore-button {
-  background-color: #56CCF2;
-  border: none;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.app__main {
+.app__first-section-description {
+  width: 315px;
+  height: 46px;
   display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-}
-.app__main__main {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.app__main__main-icon {
-  font-size: 2em;
-}
-.app__main__main-text {
-  margin-top: 10px;
-}
-.app__restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
   justify-content: center;
 }
-.app__restaurants .restaurant {
-  flex: 1 1 150px;
+.app__description {
+  margin: 0px;
+  text-align: center;
+  font-weight: 300;
+  color: #353535;
 }
-.app__restaurants .restaurant__image {
+.app__explore-button {
+  margin-top: 40px;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.app__second-section {
+  top: 448px;
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: 440px;
+  padding-left: 20px;
 }
-.app__restaurants .restaurant__name {
+.app__second-section-title {
+  margin-top: 30px;
+}
+.app__second-section-first-choice, .app__second-section-second-choice, .app__second-section-third-choice {
+  padding: 40px;
+  position: relative;
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 335px;
+  height: 72.38px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.app__rectangle-icon-first-number, .app__rectangle-icon-second-number, .app__rectangle-icon-third-number {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /*transform: translateY(-50%);*/
+  transform: translate(-50%, -50%);
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.app__text-title {
+  flex-grow: 1;
+  text-align: center;
+  color: black;
   font-weight: bold;
-}
-.app__restaurants .restaurant__info {
-  color: #666;
 }

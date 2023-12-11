@@ -3,3 +3,50 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin linear-gradient-button {
+    background: linear-gradient(180deg, $secondary-color, $primary-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+@mixin rectangle-choice {
+    position: relative;
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 335px;
+    height: 72.38px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@mixin rectangle-choice-circle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /*transform: translateY(-50%);*/
+    transform: translate(-50%, -50%);
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}

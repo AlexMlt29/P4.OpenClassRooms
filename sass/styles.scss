@@ -13,79 +13,89 @@ body {
     width: 12px;
 }
 
+h1 {
+    margin: 0px;
+}
+
+.color-first-second-choice {
+    color: #7E7E7E;
+}
+
+.color-third-choice {
+    color: $primary-color;
+}
+
 .app {
-/***********************/
+
     &__first-section {
+        width: 100%;
+        height: 287px;
         flex-direction: column;
-        @include elements-center
+        background-color: $background-color;
+        @include elements-center;
+    }
+
+    &__first-section-title {
+        width: 275px;
+        height: 68px;
+        @include elements-center;
     }
 
     &__title {
-        font-size: 1.5em;
-        color: #333;
+        margin: 0px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__first-section-description {
+        width: 315px;
+        height: 46px;
+        @include elements-center;
     }
 
     &__description {
-        color: #666;
-        margin-bottom: 20px;
+        margin: 0px;
+        text-align: center;
+        font-weight: 300;
+        color: #353535;
     }
 
     &__explore-button {
-        background-color: #56CCF2;
-        border: none;
-        padding: 10px 20px;
-        color: #fff;
+        margin-top: 40px;
+        width: 218px;
+        height: 50px;
+        @include linear-gradient-button;
+    }
+
+    &__second-section {
+        top: 448px;
+        width: 100%;
+        height: 440px;
+        padding-left: 20px;
+    }
+
+    &__second-section-title {
+        margin-top: 30px;
+    }
+
+    &__second-section-first-choice,
+    &__second-section-second-choice,
+    &__second-section-third-choice {
+        padding: 40px;
+        @include rectangle-choice;
+    }
+
+    &__rectangle-icon-first-number,
+    &__rectangle-icon-second-number,
+    &__rectangle-icon-third-number {
+        @include rectangle-choice-circle;
+    }
+
+    &__text-title {
+        flex-grow: 1;
+        text-align: center;
+        color: black;
         font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
     }
 
-    &__main {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px 0;
-
-        &__main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            &-icon {
-                font-size: 2em;
-            }
-
-            &-text {
-                margin-top: 10px;
-            }
-        }
-    }
-
-    &__restaurants {
-        display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-
-    .restaurant {
-        flex: 1 1 150px; // Chaque élément de restaurant prendra au moins 150px et grandira pour occuper l'espace disponible.
-
-        &__image {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            // Ajoutez votre code CSS supplémentaire ici pour l'image
-        }
-
-        &__name {
-            font-weight: bold;
-            // Ajoutez votre code CSS supplémentaire ici pour le nom
-        }
-
-        &__info {
-            color: #666;
-            // Ajoutez votre code CSS supplémentaire ici pour l'info
-        }
-    }
-    }
 }
