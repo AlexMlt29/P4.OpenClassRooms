@@ -3,20 +3,18 @@
 @import 'header';
 @import 'first-section';
 @import 'second-section';
+@import 'restaurants';
 
-body {
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 .icon-size {
     height: 16px;
     width: 12px;
-}
-
-h1 {
-    margin: 0px;
 }
 
 .color-first-second-choice {
@@ -27,33 +25,11 @@ h1 {
     color: $primary-color;
 }
 
+a {
+    text-decoration: none;
+}
+
 .app {
 
-    &__restaurants {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
-        justify-content: center;
-
-        .restaurant {
-            flex: 1 1 150px; // Chaque élément de restaurant prendra au moins 150px et grandira pour occuper l'espace disponible.
-
-            &__image {
-                width: 100%;
-                height: auto;
-                border-radius: 5px;
-            }
-
-            &__name {
-                font-weight: bold;
-            }
-
-            &__info {
-                color: #666;
-            }
-        }
-    }
-
+    
 }
