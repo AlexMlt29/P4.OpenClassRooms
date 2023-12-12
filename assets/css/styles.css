@@ -232,3 +232,38 @@
 a {
   text-decoration: none;
 }
+
+.change-color {
+  color: white;
+}
+
+.app__footer {
+  background-color: #353535;
+  padding: 22px;
+  padding-left: 25px;
+}
+.app__footer-container {
+  width: 139px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app__footer-logo-content {
+  height: 18px;
+  filter: invert(100%);
+}
+.app__footer-link {
+  width: 190px;
+  height: 99px;
+}
+.app__footer-link-container {
+  width: 190px;
+  height: 99px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.app__link-txt-color {
+  color: white;
+}

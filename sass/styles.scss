@@ -29,7 +29,45 @@ a {
     text-decoration: none;
 }
 
+.change-color {
+    color: white;
+}
+
 .app {
 
+    &__footer {
+        background-color: $description-footer-color;
+        padding: 22px;
+        padding-left: 25px;
+    }
+
+    &__footer-container {
+        width: 139px;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
     
+    &__footer-logo-content {
+        height: 18px;
+        filter: invert(100%);
+    }
+
+    &__footer-link {
+        width: 190px;
+        height: 99px;
+    }
+
+    &__footer-link-container {
+        width: 190px;
+        height: 99px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__link-txt-color {
+        @include link-txt-color
+    }
 }
