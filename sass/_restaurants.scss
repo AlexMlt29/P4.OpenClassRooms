@@ -1,0 +1,35 @@
+.app {
+
+    &__restaurants {
+        padding: 17.5px;
+        height: 1226px;
+        background-color: $background-color;
+    }
+
+    &__restaurant-container {
+        width: 340px;
+        height: 1058px;
+    }
+
+    &__restaurants-title {
+        @include display-title
+    }
+
+    &__title-restaurants {
+        margin-top: 20px;
+    }
+
+    &__restaurant-card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__display-card {
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    &__card {
+        @include card
+    }
+}
