@@ -37,4 +37,12 @@
         color: black;
         font-weight: bold;
     }
+
+    .color-first-second-choice {
+        color: #7E7E7E;
+    }
+    
+    .color-third-choice {
+        color: $primary-color;
+    }
 }

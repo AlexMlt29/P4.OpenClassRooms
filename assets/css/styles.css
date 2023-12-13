@@ -41,6 +41,10 @@
   padding-left: 17px;
   font-size: 16px;
 }
+.app .icon-size {
+  height: 16px;
+  width: 12px;
+}
 
 .app__first-section {
   width: 100%;
@@ -150,6 +154,12 @@
   color: black;
   font-weight: bold;
 }
+.app .color-first-second-choice {
+  color: #7E7E7E;
+}
+.app .color-third-choice {
+  color: #9356DC;
+}
 
 .app__restaurants {
   padding: 17.5px;
@@ -209,38 +219,13 @@
   margin-bottom: 0px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "roboto", sans-serif;
-  box-sizing: border-box;
-}
-
-.icon-size {
-  height: 16px;
-  width: 12px;
-}
-
-.color-first-second-choice {
-  color: #7E7E7E;
-}
-
-.color-third-choice {
-  color: #9356DC;
-}
-
-a {
-  text-decoration: none;
-}
-
-.change-color {
-  color: white;
-}
-
 .app__footer {
   background-color: #353535;
   padding: 22px;
   padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .app__footer-container {
   width: 139px;
@@ -262,8 +247,44 @@ a {
   height: 99px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  margin-top: 10px;
 }
-.app__link-txt-color {
+.app__link-first-txt-color {
+  padding-left: 7px;
   color: white;
+}
+.app__link-second-txt-color {
+  padding-left: 2.5px;
+  color: white;
+}
+.app__link-third-txt-color, .app__link-fourth-txt-color {
+  color: white;
+}
+.app__footer-first-link, .app__footer-second-link, .app__footer-third-link, .app__footer-fourth-link {
+  margin-bottom: 7px;
+}
+.app__app-footer-first-link {
+  gap: 10px;
+}
+.app .logo-footer-fork {
+  color: white;
+  display: inline-block;
+  font-size: 13px;
+}
+.app .logo-footer-hand {
+  color: white;
+  display: inline-block;
+  transform: rotate(135deg);
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }

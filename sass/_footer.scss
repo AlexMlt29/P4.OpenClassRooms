@@ -4,6 +4,9 @@
         background-color: $description-footer-color;
         padding: 22px;
         padding-left: 25px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     &__footer-container {
@@ -29,10 +32,45 @@
         height: 99px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        margin-top: 10px;
     }
 
-    &__link-txt-color {
+    &__link-first-txt-color {
+        padding-left: 7px;
         @include link-txt-color
+    }
+
+    &__link-second-txt-color {
+        padding-left: 2.5px;
+        @include link-txt-color
+    }
+
+    &__link-third-txt-color,
+    &__link-fourth-txt-color {
+        @include link-txt-color
+    }
+
+    &__footer-first-link,
+    &__footer-second-link,
+    &__footer-third-link,
+    &__footer-fourth-link {
+        margin-bottom: 7px;
+    }
+
+    &__app-footer-first-link {
+        gap: 10px;
+    }
+
+    .logo-footer-fork {
+        color: white;
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .logo-footer-hand {
+        color: white;
+        display: inline-block;
+        transform: rotate(135deg);
+        font-size: 13px;
     }
 }
