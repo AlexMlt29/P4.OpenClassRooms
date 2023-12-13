@@ -19,6 +19,11 @@
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     outline: none;
+
+    &:hover {
+        background: linear-gradient(180deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
 }
 
 @mixin rectangle-choice {
@@ -94,6 +99,49 @@
         font-size: 17px;
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+    &__like {
+        @include elements-center();
+        border: none;
+        background-color: transparent;
+
+        .fa-heart {
+            font-size: 22px;
+        }
+
+        .fa-solid.fa-heart {
+            display: none;
+        }
+
+        &:hover {
+            .fa-regular.fa-heart {
+                display: none;
+            }
+
+            .fa-solid.fa-heart {
+                display: inline;
+                color: transparent;
+                background: linear-gradient(to bottom, $primary-color, $secondary-color);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+        }
+    }
+
+    &__new-tag {
+        width: 80px;
+        height: 29px;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        background-color: $background-new-tag-color;
+        color: $color-text-new-tag;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 10;
     }
 }
 

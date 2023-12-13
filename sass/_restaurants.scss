@@ -30,6 +30,7 @@
     }
 
     &__card {
+        position: relative;
         @include card
     }
 }
