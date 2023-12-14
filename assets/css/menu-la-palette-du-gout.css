@@ -1,0 +1,256 @@
+.app__footer {
+  background-color: #353535;
+  padding: 22px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.app__footer-container {
+  width: 139px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.app__footer-logo-content {
+  height: 18px;
+  filter: invert(100%);
+}
+.app__footer-link {
+  width: 190px;
+  height: 99px;
+}
+.app__footer-link-container {
+  width: 190px;
+  height: 99px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.app__link-first-txt-color {
+  padding-left: 7px;
+  color: white;
+}
+.app__link-second-txt-color {
+  padding-left: 2.5px;
+  color: white;
+}
+.app__link-third-txt-color, .app__link-fourth-txt-color {
+  color: white;
+}
+.app__footer-first-link, .app__footer-second-link, .app__footer-third-link, .app__footer-fourth-link {
+  margin-bottom: 7px;
+}
+.app__app-footer-first-link {
+  gap: 10px;
+}
+.app .logo-footer-fork {
+  color: white;
+  display: inline-block;
+  font-size: 13px;
+}
+.app .logo-footer-hand {
+  color: white;
+  display: inline-block;
+  transform: rotate(135deg);
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app__header {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__logo-container {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__logo-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__logo {
+  height: 36px;
+}
+.app .header-arrow-left-size {
+  color: black;
+  font-size: 18px;
+}
+.app__menu-img-overlay {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.app__menu-img {
+  width: 100%;
+  height: 275px;
+  display: block;
+}
+.app__menu-overlay-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  z-index: 2;
+}
+.app__menu-content {
+  width: 100%;
+  height: 1105px;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.app__menu-title {
+  width: 100%;
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+}
+.app__title-menu {
+  font-size: 28px;
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.app__like {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: end;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+.app__like .fa-heart {
+  font-size: 22px;
+}
+.app__like .fa-solid.fa-heart {
+  display: none;
+}
+.app__like:hover .fa-regular.fa-heart {
+  display: none;
+}
+.app__like:hover .fa-solid.fa-heart {
+  display: inline;
+  color: transparent;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.app__menu-container {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.app__menu-container-title {
+  position: relative;
+  width: 100%;
+  height: 27px;
+}
+.app__menu-container-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.app__menu-title-container {
+  font-size: 16px;
+  font-weight: 300;
+}
+.app__menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 12px;
+  width: 100%;
+  height: 69px;
+}
+.app__menu-card__content {
+  padding: 15px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.app__menu-card__txt {
+  width: 287px;
+}
+.app__menu-card__title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.app__menu-card__subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.app__menu-card__price {
+  display: flex;
+  align-items: end;
+}
+.app__menu-card .euro {
+  font-weight: 700;
+}
+.app__menu-button-container {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__menu-button {
+  width: 186px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.app__menu-button:hover {
+  background: linear-gradient(180deg, #fface8, #ae80e5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
