@@ -1,25 +1,24 @@
-.app {
+.restaurants {
 
-    &__restaurants {
+    & {
         padding: 17.5px;
         height: 1226px;
         background-color: $background-color;
     }
 
-    &__restaurant-container {
+    &__section {
         width: 340px;
-        height: 1058px;
     }
 
-    &__restaurants-title {
+    &__content{
         @include display-title
     }
 
-    &__title-restaurants {
+    &__title {
         margin-top: 20px;
     }
 
-    &__restaurant-card {
+    &__card {
         display: flex;
         flex-wrap: wrap;
     }

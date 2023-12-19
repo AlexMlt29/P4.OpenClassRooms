@@ -9,188 +9,186 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/menu-restaurants.css" />
   </head>
   <body>
-    <div class="app">
-      <header class="app__header">
-        <div class="app__logo-container">
-          <a href="./index.html" class="app__logo-button">
-            <i class="fa-solid fa-arrow-left header-arrow-left-size"></i>
-          </a>
-          <img class="app__logo" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood en haut de la page web" />
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html" class="header__link">
+          <i class="fa-solid fa-arrow-left header-arrow-left-size"></i>
+        </a>
+        <img class="header__logo" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood en haut de la page web" />
+      </div>
+    </header>
+    <main>
+      <div class="main__menu">
+        <img class="main__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
+        <div class="main__overlay"></div>
+      </div>
+      <section class="restaurant">
+        <div class="restaurant__menu">
+          <h1 class="restaurant__title">La note enchantée</h1>
+          <button class="restaurant__like">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </button>
         </div>
-      </header>
-      <main>
-        <div class="app__menu-img-overlay">
-          <img class="app__menu-img" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
-          <div class="app__menu-overlay-div"></div>
+        <div class="menu">
+          <div class="menu__section">
+            <h1 class="menu__title">ENTRÉES</h1>
+          </div>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Ravioles de foie gras</h2>
+                <p class="card__subtitle">Accompagnées de leur crème à la truffe</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">25€</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Caviar osciètre</h2>
+                <p class="card__subtitle">Sur blini à la farine de blé noir</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">35€</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Homard et espuma de potiron</h2>
+                <p class="card__subtitle">Marinés aux zestes d'orange</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">20€</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Foie gras de canard cuit entier</h2>
+                <p class="card__subtitle">Confiture de figue et pain toasté</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">20€</span>
+              </div>
+            </div>
+          </article>
         </div>
-        <section class="app__menu-content">
-          <div class="app__menu-title">
-            <h1 class="app__title-menu">La note enchantée</h1>
-            <button class="app__like">
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-solid fa-heart"></i>
-            </button>
+        <div class="menu">
+          <div class="menu__section">
+            <h1 class="menu__title">PLATS</h1>
           </div>
-          <div class="app__menu-container">
-            <div class="app__menu-container-title">
-              <h1 class="app__menu-title-container">ENTRÉES</h1>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Filet de bœuf aux herbes</h2>
+                <p class="card__subtitle">Accompagné de sa ribambelle de légumes</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">40€</span>
+              </div>
             </div>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Ravioles de foie gras</h2>
-                  <p class="app__menu-card__subtitle">Accompagnées de leur crème à la truffe</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">25€</span>
-                </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Parmentier de queue de bœuf</h2>
+                <p class="card__subtitle">À la truffe noire sur sa purée de panais</p>
               </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Caviar osciètre</h2>
-                  <p class="app__menu-card__subtitle">Sur blini à la farine de blé noir</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">35€</span>
-                </div>
+              <div class="card__price">
+                <span class="euro">35€</span>
               </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Homard et espuma de potiron</h2>
-                  <p class="app__menu-card__subtitle">Marinés aux zestes d'orange</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">20€</span>
-                </div>
-              </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-                <div class="app__menu-card__content">
-                  <div class="app__menu-card__txt">
-                    <h2 class="app__menu-card__title">Foie gras de canard cuit entier</h2>
-                    <p class="app__menu-card__subtitle">Confiture de figue et pain toasté</p>
-                  </div>
-                  <div class="app__menu-card__price">
-                    <span class="euro">20€</span>
-                  </div>
-                </div>
-              </article>
-          </div>
-          <div class="app__menu-container">
-            <div class="app__menu-container-title">
-              <h1 class="app__menu-title-container">PLATS</h1>
             </div>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Filet de bœuf aux herbes</h2>
-                  <p class="app__menu-card__subtitle">Accompagné de sa ribambelle de légumes</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">40€</span>
-                </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Filet de turbot</h2>
+                <p class="card__subtitle">Aux agrumes</p>
               </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Parmentier de queue de bœuf</h2>
-                  <p class="app__menu-card__subtitle">À la truffe noire sur sa purée de panais</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">35€</span>
-                </div>
+              <div class="card__price">
+                <span class="euro">44€</span>
               </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Filet de turbot</h2>
-                  <p class="app__menu-card__subtitle">Aux agrumes</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">44€</span>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="app__menu-container">
-            <div class="app__menu-container-title">
-              <h1 class="app__menu-title-container">DESSERTS</h1>
             </div>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Paris-Brest</h2>
-                  <p class="app__menu-card__subtitle">Revisité</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">18€</span>
-                </div>
-              </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Macaron au chocolat d'exception</h2>
-                  <p class="app__menu-card__subtitle">Et glace à la vanille de Madagascar</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">22€</span>
-                </div>
-              </div>
-            </article>
-            <article class="app__menu-card" onclick="">
-              <div class="app__menu-card__content">
-                <div class="app__menu-card__txt">
-                  <h2 class="app__menu-card__title">Mousse au chocolat</h2>
-                  <p class="app__menu-card__subtitle">Au piment d'Espelette et à la truffe noire</p>
-                </div>
-                <div class="app__menu-card__price">
-                  <span class="euro">23€</span>
-                </div>
-              </div>
-            </article>
+          </article>
+        </div>
+        <div class="menu">
+          <div class="menu__section">
+            <h1 class="menu__title">DESSERTS</h1>
           </div>
-          <div class="app__menu-button-container">
-            <button class="app__menu-button">Commander</button>
-          </div>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Paris-Brest</h2>
+                <p class="card__subtitle">Revisité</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">18€</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Macaron au chocolat d'exception</h2>
+                <p class="card__subtitle">Et glace à la vanille de Madagascar</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">22€</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__content">
+              <div class="card__txt">
+                <h2 class="card__title">Mousse au chocolat</h2>
+                <p class="card__subtitle">Au piment d'Espelette et à la truffe noire</p>
+              </div>
+              <div class="card__price">
+                <span class="euro">23€</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="button">
+          <button class="button__content">Commander</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__container">
+        <section class="footer__logo">
+          <img class="footer__image" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood footer" />
         </section>
-      </main>
-      <footer class="app__footer">
-        <nav class="app__footer-container">
-          <section class="app__footer-logo">
-            <img class="app__footer-logo-content" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood footer" />
-          </section>
-        </nav>
-        <nav class="app__footer-link">
-          <section class="app__footer-link-container">
-            <a href="#" class="app__footer-first-link">
-              <i class="fa-solid fa-utensils logo-footer-fork"></i>
-              <span class="app__link-first-txt-color">Proposer un restaurant</span>
-            </a>
-            <a href="#" class="app__footer-second-link">
-              <i class="fa-solid fa-handshake-simple logo-footer-hand"></i>
-              <span class="app__link-second-txt-color">Devenir partenaire</span>
-            </a>
-            <a href="#" class="app__footer-third-link">
-              <span class="app__link-third-txt-color">Mentions légales</span>
-            </a>
-            <a href="#" class="app__footer-fourth-link">
-              <span class="app__link-fourth-txt-color">Contact</span>
-            </a>
-          </section>
-        </nav>
-      </footer>
-    </div>
+      </nav>
+      <nav class="link">
+        <section class="link__container">
+          <a href="#" class="link__description">
+            <i class="fa-solid fa-utensils logo-footer-fork"></i>
+            <span class="link__title">Proposer un restaurant</span>
+          </a>
+          <a href="#" class="link__description">
+            <i class="fa-solid fa-handshake-simple logo-footer-hand"></i>
+            <span class="link__title">Devenir partenaire</span>
+          </a>
+          <a href="#" class="link__description">
+            <span class="link__title">Mentions légales</span>
+          </a>
+          <a href="#" class="link__description">
+            <span class="link__title">Contact</span>
+          </a>
+        </section>
+      </nav>
+    </footer>
   </body>
 </html>

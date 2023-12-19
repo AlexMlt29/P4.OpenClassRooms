@@ -9,7 +9,43 @@ a {
   text-decoration: none;
 }
 
-.app__footer {
+.header {
+  width: 100%;
+  height: 113px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__container {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  height: 36px;
+}
+.header__location {
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  padding-left: 17px;
+  font-size: 16px;
+}
+.header .icon-size {
+  height: 16px;
+  width: 12px;
+}
+
+.footer {
   background-color: #353535;
   padding: 22px;
   padding-left: 25px;
@@ -17,83 +53,52 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
-.app__footer-container {
+.footer__container {
   width: 139px;
   height: 27px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.app__footer-logo-content {
+.footer__image {
   height: 18px;
   filter: invert(100%);
 }
-.app__footer-link {
+
+.link {
   width: 190px;
   height: 99px;
 }
-.app__footer-link-container {
+.link__container {
   width: 190px;
   height: 99px;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
-.app__link-first-txt-color {
+.link__description {
   padding-left: 7px;
   color: white;
 }
-.app__link-second-txt-color {
-  padding-left: 2.5px;
-  color: white;
-}
-.app__link-third-txt-color, .app__link-fourth-txt-color {
-  color: white;
-}
-.app__footer-first-link, .app__footer-second-link, .app__footer-third-link, .app__footer-fourth-link {
+.link__title {
   margin-bottom: 7px;
 }
-.app__app-footer-first-link {
-  gap: 10px;
-}
-.app .logo-footer-fork {
+.link .logo-footer-fork {
   color: white;
   display: inline-block;
   font-size: 13px;
 }
-.app .logo-footer-hand {
+.link .logo-footer-hand {
   color: white;
   display: inline-block;
   transform: rotate(135deg);
   font-size: 13px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "roboto", sans-serif;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-.app__header {
-  width: 100%;
+.header {
   height: 63px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.app__logo-container {
-  width: 100%;
-  height: 63px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app__logo-button {
+.header__link {
   width: 30px;
   height: 30px;
   border: none;
@@ -105,25 +110,25 @@ a {
   align-items: center;
   justify-content: center;
 }
-.app__logo {
-  height: 36px;
-}
-.app .header-arrow-left-size {
+.header .header-arrow-left-size {
   color: black;
   font-size: 18px;
 }
-.app__menu-img-overlay {
+
+.main__menu {
   position: relative;
   width: 100%;
   overflow: visible;
 }
-.app__menu-img {
+
+.main__image {
   width: 100%;
   height: 275px;
   display: block;
   object-fit: cover;
 }
-.app__menu-overlay-div {
+
+.main__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -134,7 +139,8 @@ a {
   border-top-right-radius: 50px;
   z-index: 2;
 }
-.app__menu-content {
+
+.restaurant {
   width: 100%;
   height: auto;
   background-color: #F6F6F6;
@@ -143,19 +149,19 @@ a {
   padding-left: 13px;
   padding-right: 13px;
 }
-.app__menu-title {
+.restaurant__menu {
   width: 100%;
   height: 29px;
   display: flex;
   flex-direction: row;
 }
-.app__title-menu {
+.restaurant__title {
   font-size: 28px;
   font-family: "Shrikhand", sans-serif;
   font-style: italic;
   font-weight: 500;
 }
-.app__like {
+.restaurant__like {
   border: none;
   background-color: transparent;
   display: flex;
@@ -163,35 +169,35 @@ a {
   padding-left: 29px;
   padding-right: 29px;
 }
-.app__like .fa-heart {
+.restaurant__like .fa-heart {
   font-size: 22px;
 }
-.app__like .fa-solid.fa-heart {
+.restaurant__like .fa-solid.fa-heart {
   display: none;
 }
-.app__like:hover .fa-regular.fa-heart {
+.restaurant__like:hover .fa-regular.fa-heart {
   display: none;
 }
-.app__like:hover .fa-solid.fa-heart {
+.restaurant__like:hover .fa-solid.fa-heart {
   display: inline;
   color: transparent;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
 }
-.app__menu-container {
+.restaurant .menu {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
 }
-.app__menu-container-title {
+.restaurant .menu__section {
   position: relative;
   width: 100%;
   height: 27px;
 }
-.app__menu-container-title:before {
+.restaurant .menu__section:before {
   content: "";
   position: absolute;
   left: 0;
@@ -200,11 +206,11 @@ a {
   height: 3px;
   background-color: #99E2D0;
 }
-.app__menu-title-container {
+.restaurant .menu__title {
   font-size: 16px;
   font-weight: 300;
 }
-.app__menu-card {
+.restaurant .card {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -214,41 +220,41 @@ a {
   width: 100%;
   height: 69px;
 }
-.app__menu-card__content {
+.restaurant .card__content {
   padding: 15px;
   color: black;
   display: flex;
   justify-content: space-between;
 }
-.app__menu-card__txt {
+.restaurant .card__txt {
   width: 287px;
 }
-.app__menu-card__title {
+.restaurant .card__title {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: 500;
 }
-.app__menu-card__subtitle {
+.restaurant .card__subtitle {
   font-size: 15px;
   font-weight: 300;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.app__menu-card__price {
+.restaurant .card__price {
   display: flex;
   align-items: end;
 }
-.app__menu-card .euro {
+.restaurant .card .euro {
   font-weight: 700;
 }
-.app__menu-button-container {
+.restaurant .button {
   width: 100%;
   height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.app__menu-button {
+.restaurant .button__content {
   width: 186px;
   height: 50px;
   display: flex;
@@ -264,7 +270,7 @@ a {
   cursor: pointer;
   outline: none;
 }
-.app__menu-button:hover {
+.restaurant .button__content:hover {
   background: linear-gradient(180deg, #fface8, #ae80e5);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }

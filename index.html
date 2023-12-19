@@ -8,150 +8,148 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div class="app">
-      <header class="app__header">
-        <div class="app__logo-container">
-          <img class="app__logo" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood en haut de la page web" />
+    <header class="header">
+      <div class="header__container">
+        <img class="header__logo" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood en haut de la page web" />
+      </div>
+      <div class="header__location">
+        <i class="fa-solid fa-location-dot icon-size"></i>
+        <span class="header__title">Paris, Belleville</span>
+      </div>
+    </header>
+    <main>
+      <section class="menus">
+        <div class="menus__section">
+          <h1 class="menus__title">Réservez le menu qui vous convient</h1>
         </div>
-        <div class="app__location-container">
-          <i class="fa-solid fa-location-dot icon-size"></i>
-          <span class="app__location-text">Paris, Belleville</span>
+        <div class="menus__description">
+          <p class="menus__content">Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
         </div>
-      </header>
-      <main>
-        <section class="app__first-section">
-          <div class="app__first-section-title">
-            <h1 class="app__title">Réservez le menu qui vous convient</h1>
+        <button class="menus__button">Explorer nos restaurants</button>
+      </section>
+      <section class="fonctionnements">
+        <div class="fonctionnements__section">
+          <h1 class="fonctionnements__title">Fonctionnement</h1>
+        </div>
+        <div class="fonctionnements__description">
+          <div class="fonctionnements__content">
+            <span class="fonctionnements__number">1</span>
+            <i class="fa-solid fa-mobile-screen-button color-first-second-choice"></i>
+            <span class="fonctionnements__text">Choisissez un restaurant</span>
           </div>
-          <div class="app__first-section-description">
-            <p class="app__description">Découvrez des restaurants d'exception, sélectionnés pas nos soins.</p>
+          <div class="fonctionnements__content">
+            <span class="fonctionnements__number">2</span>
+            <i class="fa-solid fa-list-ul color-first-second-choice"></i>
+            <span class="fonctionnements__text">Composez votre menu</span>
           </div>
-          <button class="app__explore-button">Explorer nos restaurants</button>
+          <div class="fonctionnements__content">
+            <span class="fonctionnements__number">3</span>
+            <i class="fa-solid fa-store color-third-choice"></i>
+            <span class="fonctionnements__text">Dégustez au restaurant</span>
+          </div>
+        </div>
+      </section>
+      <section class="restaurants">
+        <div class="restaurants__section">
+          <div class="restaurants__content">
+            <h1 class="restaurants__title">Restaurants</h1>
+          </div>
+          <div class="restaurants__card">
+            <a href="./menu-la-palette-du-gout.html" class="restaurants__display-card">
+              <article class="restaurants__card">
+                <div class="restaurants__card__new-tag">Nouveau</div>
+                <img class="restaurants__card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
+                <div class="restaurants__card__content">
+                  <div class="restaurants__card__txt">
+                    <h2 class="restaurants__card__title">La palette du goût</h2>
+                    <p class="restaurants__card__subtitle">Ménilmontant</p>
+                  </div>
+                  <button class="restaurants__card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </article>
+            </a>
+            <a href="./menu-la-note-enchantee.html" class="restaurants__display-card">
+              <article class="restaurants__card">
+                <div class="restaurants__card__new-tag">Nouveau</div>
+                <img class="restaurants__card__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
+                <div class="restaurants__card__content">
+                  <div class="restaurants__card__txt">
+                    <h2 class="restaurants__card__title">La note enchantée</h2>
+                    <p class="restaurants__card__subtitle">Charonne</p>
+                  </div>
+                  <button class="restaurants__card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </article>
+            </a>
+            <a href="./menu-a-la-francaise.html" class="restaurants__display-card">
+              <article class="restaurants__card">
+                <img class="restaurants__card__image" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la Française" />
+                <div class="restaurants__card__content">
+                  <div class="restaurants__card__txt">
+                    <h2 class="restaurants__card__title">À la Française</h2>
+                    <p class="restaurants__card__subtitle">Cité Rouge</p>
+                  </div>
+                  <button class="restaurants__card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </article>
+            </a>
+            <a href="./menu-le-delice-des-sens.html" class="restaurants__display-card">
+              <article class="restaurants__card">
+                <img class="restaurants__card__image" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
+                <div class="restaurants__card__content">
+                  <div class="restaurants__card__txt">
+                    <h2 class="restaurants__card__title">Le délice des sens</h2>
+                    <p class="restaurants__card__subtitle">Folie-Méricourt</p>
+                  </div>
+                  <button class="restaurants__card__like">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__container">
+        <section class="footer__logo">
+          <img class="footer__image" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood footer" />
         </section>
-        <section class="app__second-section">
-          <div class="app__second-section-title">
-            <h1 class="app__title-second-section">Fonctionnement</h1>
-          </div>
-          <div class="app__second-section-choice">
-            <div class="app__second-section-first-choice">
-              <span class="app__rectangle-icon-first-number">1</span>
-              <i class="fa-solid fa-mobile-screen-button color-first-second-choice"></i>
-              <span class="app__text-title">Choisissez un restaurant</span>
-            </div>
-            <div class="app__second-section-second-choice">
-              <span class="app__rectangle-icon-second-number">2</span>
-              <i class="fa-solid fa-list-ul color-first-second-choice"></i>
-              <span class="app__text-title">Composez votre menu</span>
-            </div>
-            <div class="app__second-section-third-choice">
-              <span class="app__rectangle-icon-third-number">3</span>
-              <i class="fa-solid fa-store color-third-choice"></i>
-              <span class="app__text-title">Dégustez au restaurant</span>
-            </div>
-          </div>
+      </nav>
+      <nav class="link">
+        <section class="link__container">
+          <a href="#" class="link__description">
+            <i class="fa-solid fa-utensils logo-footer-fork"></i>
+            <span class="link__title">Proposer un restaurant</span>
+          </a>
+          <a href="#" class="link__description">
+            <i class="fa-solid fa-handshake-simple logo-footer-hand"></i>
+            <span class="link__title">Devenir partenaire</span>
+          </a>
+          <a href="#" class="link__description">
+            <span class="link__title">Mentions légales</span>
+          </a>
+          <a href="#" class="link__description">
+            <span class="link__title">Contact</span>
+          </a>
         </section>
-        <section class="app__restaurants">
-          <div class="app__restaurant-container">
-            <div class="app__restaurants-title">
-              <h1 class="app__title-restaurants">Restaurants</h1>
-            </div>
-            <div class="app__restaurant-card">
-              <a href="./menu-la-palette-du-gout.html" class="app__display-card">
-                <article class="app__card">
-                  <div class="app__card__new-tag">Nouveau</div>
-                  <img class="app__card__image" src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" />
-                  <div class="app__card__content">
-                    <div class="app__card__txt">
-                      <h2 class="app__card__title">La palette du goût</h2>
-                      <p class="app__card__subtitle">Ménilmontant</p>
-                    </div>
-                    <button class="app__card__like">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </button>
-                  </div>
-                </article>
-              </a>
-              <a href="./menu-la-note-enchantee.html" class="app__display-card">
-                <article class="app__card">
-                  <div class="app__card__new-tag">Nouveau</div>
-                  <img class="app__card__image" src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" />
-                  <div class="app__card__content">
-                    <div class="app__card__txt">
-                      <h2 class="app__card__title">La note enchantée</h2>
-                      <p class="app__card__subtitle">Charonne</p>
-                    </div>
-                    <button class="app__card__like">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </button>
-                  </div>
-                </article>
-              </a>
-              <a href="./menu-a-la-francaise.html" class="app__display-card">
-                <article class="app__card">
-                  <img class="app__card__image" src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la Française" />
-                  <div class="app__card__content">
-                    <div class="app__card__txt">
-                      <h2 class="app__card__title">À la Française</h2>
-                      <p class="app__card__subtitle">Cité Rouge</p>
-                    </div>
-                    <button class="app__card__like">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </button>
-                  </div>
-                </article>
-              </a>
-              <a href="./menu-le-delice-des-sens.html" class="app__display-card">
-                <article class="app__card">
-                  <img class="app__card__image" src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" />
-                  <div class="app__card__content">
-                    <div class="app__card__txt">
-                      <h2 class="app__card__title">Le délice des sens</h2>
-                      <p class="app__card__subtitle">Folie-Méricourt</p>
-                    </div>
-                    <button class="app__card__like">
-                      <i class="fa-regular fa-heart"></i>
-                      <i class="fa-solid fa-heart"></i>
-                    </button>
-                  </div>
-                </article>
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="app__footer">
-        <nav class="app__footer-container">
-          <section class="app__footer-logo">
-            <img class="app__footer-logo-content" src="./assets/images/logo/ohmyfood.png" alt="Logo ohmyfood footer" />
-          </section>
-        </nav>
-        <nav class="app__footer-link">
-          <section class="app__footer-link-container">
-            <a href="#" class="app__footer-first-link">
-              <i class="fa-solid fa-utensils logo-footer-fork"></i>
-              <span class="app__link-first-txt-color">Proposer un restaurant</span>
-            </a>
-            <a href="#" class="app__footer-second-link">
-              <i class="fa-solid fa-handshake-simple logo-footer-hand"></i>
-              <span class="app__link-second-txt-color">Devenir partenaire</span>
-            </a>
-            <a href="#" class="app__footer-third-link">
-              <span class="app__link-third-txt-color">Mentions légales</span>
-            </a>
-            <a href="#" class="app__footer-fourth-link">
-              <span class="app__link-fourth-txt-color">Contact</span>
-            </a>
-          </section>
-        </nav>
-      </footer>
-    </div>
+      </nav>
+    </footer>
   </body>
 </html>

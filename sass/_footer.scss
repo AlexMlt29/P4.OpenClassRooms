@@ -1,6 +1,6 @@
-.app {
+.footer {
 
-    &__footer {
+    & {
         background-color: $description-footer-color;
         padding: 22px;
         padding-left: 25px;
@@ -9,7 +9,7 @@
         flex-direction: column;
     }
 
-    &__footer-container {
+    &__container {
         width: 139px;
         height: 27px;
         display: flex;
@@ -17,17 +17,21 @@
         justify-content: flex-start;
     }
     
-    &__footer-logo-content {
+    &__image {
         height: 18px;
         filter: invert(100%);
     }
 
-    &__footer-link {
+}
+
+.link {
+
+    & {
         width: 190px;
         height: 99px;
     }
 
-    &__footer-link-container {
+    &__container {
         width: 190px;
         height: 99px;
         display: flex;
@@ -35,30 +39,13 @@
         margin-top: 10px;
     }
 
-    &__link-first-txt-color {
+    &__description {
         padding-left: 7px;
         @include link-txt-color
     }
 
-    &__link-second-txt-color {
-        padding-left: 2.5px;
-        @include link-txt-color
-    }
-
-    &__link-third-txt-color,
-    &__link-fourth-txt-color {
-        @include link-txt-color
-    }
-
-    &__footer-first-link,
-    &__footer-second-link,
-    &__footer-third-link,
-    &__footer-fourth-link {
+    &__title {
         margin-bottom: 7px;
-    }
-
-    &__app-footer-first-link {
-        gap: 10px;
     }
 
     .logo-footer-fork {

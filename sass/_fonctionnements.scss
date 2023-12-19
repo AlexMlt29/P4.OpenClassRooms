@@ -1,37 +1,33 @@
-.app {
+.fonctionnements {
 
-    &__second-section {
+    & {
         width: 100%;
         height: 440px;
         margin-top: 50px;
     }
 
-    &__second-section-title {
+    &__section {
         @include display-title
     }
 
-    &__title-second-section {
+    &__title {
         padding-left: 20px;
     }
 
-    &__second-section-choice {
+    &__description {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    &__second-section-first-choice,
-    &__second-section-second-choice,
-    &__second-section-third-choice {
+    &__content {
         @include rectangle-choice;
     }
 
-    &__rectangle-icon-first-number,
-    &__rectangle-icon-second-number,
-    &__rectangle-icon-third-number {
+    &__number {
         @include rectangle-choice-circle;
     }
 
-    &__text-title {
+    &__text {
         flex-grow: 1;
         text-align: center;
         color: black;
