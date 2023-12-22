@@ -217,35 +217,62 @@ a {
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-top: 12px;
-  width: 100%;
-  height: 69px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .restaurant .card__content {
-  padding: 15px;
-  color: black;
   display: flex;
   justify-content: space-between;
+  color: black;
+}
+.restaurant .card:active .restaurant .card__content > * {
+  transition: transform 0.5s ease;
+  transform: translateX(-20%);
+}
+.restaurant .card:hover .restaurant .card__content > * {
+  transition: transform 0.5s ease;
+  transform: translateX(-20%);
 }
 .restaurant .card__txt {
   width: 287px;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant .card__title {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: 500;
+  text-overflow: ellipsis;
 }
 .restaurant .card__subtitle {
-  font-size: 15px;
-  font-weight: 300;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
 }
 .restaurant .card__price {
   display: flex;
   align-items: end;
+  padding: 10px;
 }
 .restaurant .card .euro {
   font-weight: 700;
+}
+.restaurant .card .validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #99E2D0;
+  width: 0;
+  transition: width 0.5s ease;
+}
+.restaurant .card:active::after {
+  width: 20%;
+}
+.restaurant .card:hover .validation {
+  width: 20%;
 }
 .restaurant .button {
   width: 100%;
@@ -273,4 +300,24 @@ a {
 .restaurant .button__content:hover {
   background: linear-gradient(180deg, #fface8, #ae80e5);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.restaurant .icone-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.restaurant .motion {
+  animation: motion 1s ease-in-out both;
+}
+@keyframes motion {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

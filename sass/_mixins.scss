@@ -1,195 +1,228 @@
 @mixin elements-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin display-title {
-    width: 100%;
-    font-family: "Shrikhand", sans-serif;
+  width: 100%;
+  font-family: "Shrikhand", sans-serif;
 }
 
 @mixin linear-gradient-button {
-    background: linear-gradient(180deg, $secondary-color, $primary-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    outline: none;
+  background: linear-gradient(180deg, $secondary-color, $primary-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
 
-    &:hover {
-        background: linear-gradient(180deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    }
+  &:hover {
+    background: linear-gradient(180deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @mixin rectangle-choice {
-    padding-left: 40px;
-    padding-right: 20px;
-    position: relative;
-    margin-top: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 72.38px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-    box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 20px;
+  position: relative;
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 72.38px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
 @mixin rectangle-choice-circle {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    /*transform: translateY(-50%);*/
-    transform: translate(-50%, -50%);
-    background-color: $primary-color;
-    color: white;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /*transform: translateY(-50%);*/
+  transform: translate(-50%, -50%);
+  background-color: $primary-color;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
 
 @mixin card {
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+  &__image {
+    width: 100%;
+    height: 174px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+    object-position: center 60%;
+  }
+
+  &__content {
+    padding: 13px;
+    color: black;
     display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 
-    &__image {
-        width: 100%;
-        height: 174px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        object-fit: cover;
-        object-position: center 60%;
+  &__txt {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__like {
+    @include elements-center();
+    border: none;
+    background-color: transparent;
+
+    .fa-heart {
+      font-size: 22px;
     }
 
-    &__content {
-        padding: 13px;
-        color: black;
-        display: flex;
-        background-color: white;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+    .fa-solid.fa-heart {
+      display: none;
     }
 
-    &__txt {
-        width: 100%;
+    &:hover {
+      .fa-regular.fa-heart {
+        display: none;
+      }
+
+      .fa-solid.fa-heart {
+        display: inline;
+        color: transparent;
+        background: linear-gradient(to bottom, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
     }
+  }
 
-    &__title {
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    &__subtitle {
-        font-size: 17px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    &__like {
-        @include elements-center();
-        border: none;
-        background-color: transparent;
-
-        .fa-heart {
-            font-size: 22px;
-        }
-
-        .fa-solid.fa-heart {
-            display: none;
-        }
-
-        &:hover {
-            .fa-regular.fa-heart {
-                display: none;
-            }
-
-            .fa-solid.fa-heart {
-                display: inline;
-                color: transparent;
-                background: linear-gradient(to bottom, $primary-color, $secondary-color);
-                -webkit-background-clip: text;
-                background-clip: text;
-            }
-        }
-    }
-
-    &__new-tag {
-        width: 80px;
-        height: 29px;
-        position: absolute;
-        top: 13px;
-        right: 13px;
-        background-color: $background-new-tag-color;
-        color: $color-text-new-tag;
-        padding: 5px 10px;
-        border-radius: 3px;
-        font-size: 14px;
-        font-weight: bold;
-        z-index: 10;
-    }
+  &__new {
+    width: 80px;
+    height: 29px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background-color: $background-new-tag-color;
+    color: $color-text-new-tag;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+  }
 }
 
 @mixin link-txt-color {
-    color: white;
+  color: white;
 }
 
 @mixin menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &__content {
     display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-top: 12px;
-    width: 100%;
-    height: 69px;
+    justify-content: space-between;
+    color: black;
+  }
 
-    &__content {
-        padding: 15px;
-        color: black;
-        display: flex;
-        justify-content: space-between;
-    }
+  &:active &__content > * {
+    transition: transform 0.5s ease;
+    transform: translateX(-20%);
+  }
 
-    &__txt {
-        width: 287px;
-    }
+  &:hover &__content > * {
+    transition: transform 0.5s ease;
+    transform: translateX(-20%);
+  }
 
-    &__title {
-        font-size: 18px;
-        margin-bottom: 5px;
-        font-weight: 500;
-    }
+  &__txt {
+    width: 287px;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 
-    &__subtitle {
-        font-size: 15px;
-        font-weight: 300;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+  &__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+  }
 
-    &__price {
-        display: flex;
-        align-items: end;
-    }
+  &__subtitle {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+  }
 
-    .euro {
-        font-weight: 700;
-    }
+  &__price {
+    display: flex;
+    align-items: end;
+    padding: 10px;
+  }
+
+  .euro {
+    font-weight: 700;
+  }
+
+  .validation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: $background-new-tag-color;
+    width: 0;
+    transition: width 0.5s ease;
+  }
+
+  &:active::after {
+    width: 20%;
+  }
+
+  &:hover .validation {
+    width: 20%;
+  }
 }
+

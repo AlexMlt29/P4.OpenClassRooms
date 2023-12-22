@@ -28,7 +28,7 @@
         margin-top: 18px;
     }
 
-    &__card {
+    .card {
         position: relative;
         @include card
     }
