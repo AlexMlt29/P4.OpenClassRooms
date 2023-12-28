@@ -12,7 +12,7 @@ a {
 
 .header {
   width: 100%;
-  height: 113px;
+  height: 63px;
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -295,13 +295,11 @@ a {
 .link__description-logo {
   width: 190px;
   height: 19px;
-  padding-left: 7px;
   color: white;
 }
 .link__description {
   width: 130px;
   height: 20px;
-  padding-left: 7px;
   color: white;
 }
 .link__title {
@@ -319,15 +317,246 @@ a {
   font-size: 13px;
 }
 
+.header__link {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-arrow-left-size {
+  color: black;
+  font-size: 18px;
+}
+
+.main__menu {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.main__image {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.main__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  z-index: 2;
+}
+
+.restaurant {
+  width: 100%;
+  height: auto;
+  background-color: #F6F6F6;
+  position: relative;
+  z-index: 1;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.restaurant__menu {
+  width: 100%;
+  height: 29px;
+  display: flex;
+  flex-direction: row;
+}
+.restaurant__title {
+  font-size: 28px;
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.restaurant__like {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: end;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+.restaurant__like .fa-heart {
+  font-size: 22px;
+}
+.restaurant__like .fa-solid.fa-heart {
+  display: none;
+}
+.restaurant__like:hover .fa-regular.fa-heart {
+  display: none;
+}
+.restaurant__like:hover .fa-solid.fa-heart {
+  display: inline;
+  color: transparent;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.restaurant .menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.restaurant .menu__section {
+  position: relative;
+  width: 100%;
+  height: 27px;
+}
+.restaurant .menu__section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+}
+.restaurant .menu__title {
+  font-size: 16px;
+  font-weight: 300;
+}
+.restaurant .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-top: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.restaurant .card__content {
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+.restaurant .card:active .restaurant .card__content > * {
+  transition: transform 0.5s ease;
+  transform: translateX(-20%);
+}
+.restaurant .card:hover .restaurant .card__content > * {
+  transition: transform 0.5s ease;
+  transform: translateX(-20%);
+}
+.restaurant .card__txt {
+  width: 287px;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: auto;
+}
+.restaurant .card__title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+}
+.restaurant .card__subtitle {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+}
+.restaurant .card__price {
+  display: flex;
+  align-items: end;
+  padding: 10px;
+}
+.restaurant .card .euro {
+  font-weight: 700;
+}
+.restaurant .card .validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #99E2D0;
+  width: 0;
+  transition: width 0.5s ease;
+}
+.restaurant .card:active::after {
+  width: 20%;
+}
+.restaurant .card:hover .validation {
+  width: 20%;
+}
+.restaurant .button {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restaurant .button__content {
+  width: 186px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.restaurant .button__content:hover {
+  background: linear-gradient(180deg, #fface8, #ae80e5);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+.restaurant .icone-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+.restaurant .motion {
+  animation: motion 1s ease-in-out both;
+}
+@keyframes motion {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /* Large devices (desktop, over/equal than 1440px) */
 @media screen and (min-width: 1440px) {
   body {
     width: 100%;
     min-width: 1440px;
+    display: flex;
+    justify-content: center;
+  }
+  .desktop {
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
   }
   .header {
-    height: 146px;
+    height: 96px;
   }
   .header__container {
     height: 96px;
@@ -364,6 +593,7 @@ a {
     margin-top: 0px;
   }
   .fonctionnements {
+    width: 1440px;
     height: 228.38px;
     margin-top: 0px;
     padding-left: 180px;
@@ -403,10 +633,12 @@ a {
     padding-left: 180px;
     padding-right: 180px;
     height: 670px;
+    display: flex;
+    justify-content: center;
   }
   .restaurants__section {
     width: 1080px;
-    height: 552px;
+    height: auto;
   }
   .restaurants__title {
     margin-top: 10px;
@@ -427,7 +659,6 @@ a {
     padding-right: 25px;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     position: relative;
@@ -455,5 +686,32 @@ a {
     position: absolute;
     bottom: 30px;
     justify-content: space-between;
+  }
+}
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/* Large devices (desktop, over/equal than 1440px) */
+@media screen and (min-width: 1440px) {
+  .header__link {
+    top: 34px;
+  }
+  .main__image {
+    height: 383px;
+  }
+  .main__overlay {
+    width: 1055px;
+    left: 193px;
+  }
+  .restaurant {
+    width: 1055px;
+    left: 193px;
+  }
+  .restaurant__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .restaurant .menu {
+    padding-left: 197.5px;
+    padding-right: 197.5px;
   }
 }

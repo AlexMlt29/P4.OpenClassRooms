@@ -5,11 +5,19 @@
     body {
         width: 100%;
         min-width: 1440px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop {
+        width: 100%;
+        max-width: 1440px;
+        box-sizing: border-box;
     }
 
     .header {
         & {
-            height: 146px;
+            height: 96px;
         }
 
         &__container {
@@ -57,6 +65,7 @@
 
     .fonctionnements {
         & {
+            width: 1440px;
             height: 228.38px;
             margin-top: 0px;
             padding-left: 180px;
@@ -86,11 +95,13 @@
             padding-left: 180px;
             padding-right: 180px;
             height: 670px;
+            display: flex;
+            justify-content: center;
         }
 
         &__section {
             width: 1080px;
-            height: 552px;
+            height: auto;
         }
 
         &__title {
@@ -117,7 +128,6 @@
             padding-right: 25px;
             padding-top: 30px;
             padding-bottom: 30px;
-            display: flex;
             justify-content: flex-start;
             flex-direction: row-reverse;
             position: relative;

@@ -182,7 +182,7 @@
 
   &__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: black;
   }
 
@@ -201,6 +201,7 @@
     padding: 10px;
     overflow: hidden;
     white-space: nowrap;
+    margin-right: auto;
   }
 
   &__title {
