@@ -20,7 +20,7 @@
   cursor: pointer;
   outline: none;
 
-  &:hover {
+  :hover {
     background: linear-gradient(180deg, lighten($secondary-color, 10%), lighten($primary-color, 10%));
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
   }
@@ -70,7 +70,6 @@
   position: absolute;
   top: 50%;
   left: 0;
-  /*transform: translateY(-50%);*/
   transform: translate(-50%, -50%);
   background-color: $primary-color;
   color: white;
@@ -135,7 +134,7 @@
       display: none;
     }
 
-    &:hover {
+    :hover {
       .fa-regular.fa-heart {
         display: none;
       }
@@ -241,12 +240,11 @@
     transition: width 0.5s ease;
   }
 
-  &:active::after {
+  :active::after {
     width: 20%;
   }
 
-  &:hover .validation {
+  :hover .validation {
     width: 20%;
   }
 }
-

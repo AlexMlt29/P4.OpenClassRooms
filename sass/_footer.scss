@@ -1,70 +1,63 @@
 .footer {
+  background-color: $description-footer-color;
+  padding: 22px;
+  padding-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-    & {
-        background-color: $description-footer-color;
-        padding: 22px;
-        padding-left: 25px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
+  &__container {
+    width: 139px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    &__container {
-        width: 139px;
-        height: 27px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    
-    &__image {
-        height: 18px;
-        filter: invert(100%);
-    }
-
+  &__image {
+    height: 18px;
+    filter: invert(100%);
+  }
 }
 
 .link {
+  width: 190px;
+  height: 99px;
 
-    & {
-        width: 190px;
-        height: 99px;
-    }
+  &__container {
+    width: 190px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 
-    &__container {
-        width: 190px;
-        height: 99px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
-    }
+  &__description-logo {
+    width: 190px;
+    height: 19px;
+    @include link-txt-color;
+  }
 
-    &__description-logo {
-        width: 190px;
-        height: 19px;
-        @include link-txt-color
-    }
+  &__description {
+    width: 130px;
+    height: 20px;
+    @include link-txt-color;
+  }
 
-    &__description {
-        width: 130px;
-        height: 20px;
-        @include link-txt-color
-    }
+  &__title {
+    margin-bottom: 7px;
+  }
 
-    &__title {
-        margin-bottom: 7px;
-    }
+  .logo-footer-fork {
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+  }
 
-    .logo-footer-fork {
-        color: white;
-        display: inline-block;
-        font-size: 13px;
-    }
-
-    .logo-footer-hand {
-        color: white;
-        display: inline-block;
-        transform: rotate(135deg);
-        font-size: 13px;
-    }
+  .logo-footer-hand {
+    color: white;
+    display: inline-block;
+    transform: rotate(135deg);
+    font-size: 13px;
+  }
 }

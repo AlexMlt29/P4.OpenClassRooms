@@ -1,35 +1,32 @@
 .restaurants {
+  padding: 17.5px;
+  height: 1226px;
+  background-color: $background-color;
 
-    & {
-        padding: 17.5px;
-        height: 1226px;
-        background-color: $background-color;
-    }
+  &__section {
+    width: 100%;
+  }
 
-    &__section {
-        width: 340px;
-    }
+  &__content {
+    @include display-title;
+  }
 
-    &__content{
-        @include display-title
-    }
+  &__title {
+    margin-top: 20px;
+  }
 
-    &__title {
-        margin-top: 20px;
-    }
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    &__card {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  &__display-card {
+    width: 100%;
+    margin-top: 18px;
+  }
 
-    &__display-card {
-        width: 100%;
-        margin-top: 18px;
-    }
-
-    .card {
-        position: relative;
-        @include card
-    }
+  .card {
+    position: relative;
+    @include card;
+  }
 }

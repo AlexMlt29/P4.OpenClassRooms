@@ -43,15 +43,13 @@
 }
 
 .restaurant {
-  & {
-    width: 100%;
-    height: auto;
-    background-color: $background-color;
-    position: relative;
-    z-index: 1;
-    padding-left: 13px;
-    padding-right: 13px;
-  }
+  width: 100%;
+  height: auto;
+  background-color: $background-color;
+  position: relative;
+  z-index: 1;
+  padding-left: 13px;
+  padding-right: 13px;
 
   &__menu {
     width: 100%;
@@ -83,7 +81,7 @@
       display: none;
     }
 
-    &:hover {
+    :hover {
       .fa-regular.fa-heart {
         display: none;
       }
@@ -99,20 +97,18 @@
   }
 
   .menu {
-    & {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      margin-top: 40px;
-    }
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 
     &__section {
       position: relative;
       width: 100%;
       height: 27px;
 
-      &:before {
+      :before {
         content: "";
         position: absolute;
         left: 0;
@@ -134,11 +130,9 @@
   }
 
   .button {
-    & {
-      width: 100%;
-      height: 140px;
-      @include elements-center;
-    }
+    width: 100%;
+    height: 140px;
+    @include elements-center;
 
     &__content {
       width: 186px;
