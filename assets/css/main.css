@@ -10,52 +10,6 @@ a {
   text-decoration: none;
 }
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 1000;
-  animation: fadeInContent 3s ease forwards;
-}
-
-#loader {
-  border: 16px solid #000000;
-  border-top: 16px solid #ffffff;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  position: fixed;
-  z-index: 1500;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: spin 0.5s linear infinite, fadeOut 0.5s ease 0.5s forwards;
-}
-
-@keyframes fadeInContent {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
 .header {
   width: 100%;
   height: 63px;
@@ -143,7 +97,7 @@ a {
   cursor: pointer;
   outline: none;
 }
-.menus__button :hover {
+.menus__button:hover {
   background: linear-gradient(180deg, #fface8, #ae80e5);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
@@ -282,10 +236,10 @@ a {
 .restaurants .card__like .fa-solid.fa-heart {
   display: none;
 }
-.restaurants .card__like :hover .fa-regular.fa-heart {
+.restaurants .card__like:hover .fa-regular.fa-heart {
   display: none;
 }
-.restaurants .card__like :hover .fa-solid.fa-heart {
+.restaurants .card__like:hover .fa-solid.fa-heart {
   display: inline;
   color: transparent;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
@@ -439,10 +393,10 @@ a {
 .restaurant__like .fa-solid.fa-heart {
   display: none;
 }
-.restaurant__like :hover .fa-regular.fa-heart {
+.restaurant__like:hover .fa-regular.fa-heart {
   display: none;
 }
-.restaurant__like :hover .fa-solid.fa-heart {
+.restaurant__like:hover .fa-solid.fa-heart {
   display: inline;
   color: transparent;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
@@ -565,7 +519,7 @@ a {
   cursor: pointer;
   outline: none;
 }
-.restaurant .button__content :hover {
+.restaurant .button__content:hover {
   background: linear-gradient(180deg, #fface8, #ae80e5);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
@@ -591,19 +545,8 @@ a {
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/* Large devices (desktop, over/equal than 1440px) */
+/* Large devices (tablette, desktop, over/equal than 1024px) */
 @media screen and (min-width: 1024px) {
-  body {
-    width: 100%;
-    min-width: 1024px;
-    display: flex;
-    justify-content: center;
-  }
-  .desktop {
-    width: 100%;
-    max-width: 1440px;
-    box-sizing: border-box;
-  }
   .header {
     height: 96px;
   }
@@ -667,7 +610,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    width: 335px;
+    width: 100%;
     height: 72.38px;
     background-color: #F6F6F6;
     border-radius: 20px;
@@ -738,8 +681,8 @@ a {
   }
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/* Large devices (desktop, over/equal than 1440px) */
-@media screen and (min-width: 1440px) {
+/* Large devices (tablette, desktop, over/equal than 1024px) */
+@media screen and (min-width: 1024px) {
   .header__link {
     top: 34px;
   }
@@ -747,12 +690,12 @@ a {
     height: 383px;
   }
   .main__overlay {
-    width: 1055px;
-    left: 193px;
+    width: 74%;
+    left: 13.5%;
   }
   .restaurant {
-    width: 1055px;
-    left: 193px;
+    width: 74%;
+    left: 13.5%;
   }
   .restaurant__menu {
     display: flex;
@@ -762,5 +705,47 @@ a {
   .restaurant .menu {
     padding-left: 197.5px;
     padding-right: 197.5px;
+  }
+}
+.loader {
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  animation: fadeInContent 3s ease forwards;
+}
+
+#loader {
+  border: 16px solid #000000;
+  border-top: 16px solid #ffffff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 0.5s linear infinite, fadeOut 0.5s ease 0.5s forwards;
+}
+
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
   }
 }

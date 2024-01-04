@@ -1,19 +1,6 @@
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/* Large devices (desktop, over/equal than 1440px) */
+/* Large devices (tablette, desktop, over/equal than 1024px) */
 @media screen and (min-width: 1024px) {
-  body {
-    width: 100%;
-    min-width: 1024px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .desktop {
-    width: 100%;
-    max-width: 1440px;
-    box-sizing: border-box;
-  }
-
   .header {
     height: 96px;
 

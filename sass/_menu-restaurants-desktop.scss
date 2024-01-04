@@ -1,6 +1,6 @@
 /* Le code ci-dessous correspond à la version responsive uniquement */
-/* Large devices (desktop, over/equal than 1440px) */
-@media screen and (min-width: 1440px) {
+/* Large devices (tablette, desktop, over/equal than 1024px) */
+@media screen and (min-width: 1024px) {
   .header {
     &__link {
       top: 34px;
@@ -12,13 +12,13 @@
   }
 
   .main__overlay {
-    width: 1055px;
-    left: 193px;
+    width: 74%;
+    left: 13.5%;
   }
 
   .restaurant {
-    width: 1055px;
-    left: 193px;
+    width: 74%;
+    left: 13.5%;
 
     &__menu {
       @include elements-center;
