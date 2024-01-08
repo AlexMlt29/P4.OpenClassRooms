@@ -21,7 +21,6 @@
 .main__menu {
   position: relative;
   width: 100%;
-  overflow: visible;
 }
 
 .main__image {
@@ -35,7 +34,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding-top: 30px;
+  padding-left: 13px;
+  padding-right: 13px;
   background-color: $background-color;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -43,6 +44,8 @@
 }
 
 .restaurant {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   background-color: $background-color;
@@ -56,13 +59,15 @@
     height: 29px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   &__title {
-    font-size: 26px;
+    font-size: 28px;
     font-family: "Shrikhand", sans-serif;
     font-style: italic;
     font-weight: 400;
+    position: relative;
   }
 
   &__like {
@@ -70,8 +75,8 @@
     background-color: transparent;
     display: flex;
     align-items: end;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 39px;
+    padding-right: 20px;
 
     .fa-heart {
       font-size: 22px;
