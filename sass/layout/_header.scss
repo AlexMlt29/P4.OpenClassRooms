@@ -3,6 +3,7 @@
   height: 63px;
   flex-direction: column;
   @include elements-center;
+  position: relative;
 
   &__container {
     width: 100%;
@@ -11,7 +12,9 @@
   }
 
   &__logo {
-    height: 36px;
+    height: 28px;
+    position: absolute;
+    bottom: 12px;
   }
 
   &__location {

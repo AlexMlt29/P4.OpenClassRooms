@@ -1,6 +1,6 @@
 .fonctionnements {
   width: 100%;
-  height: 440px;
+  height: 390px;
   margin-top: 50px;
 
   &__section {
@@ -12,8 +12,8 @@
   }
 
   &__description {
-    padding-left: 40px;
-    padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
 
   &__content {
@@ -26,7 +26,7 @@
 
   &__text {
     flex-grow: 1;
-    text-align: center;
+    text-align: start;
     color: black;
     font-weight: bold;
   }

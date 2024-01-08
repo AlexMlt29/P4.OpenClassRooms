@@ -59,6 +59,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .header__container {
   width: 100%;
@@ -68,7 +69,9 @@ a {
   justify-content: center;
 }
 .header__logo {
-  height: 36px;
+  height: 28px;
+  position: absolute;
+  bottom: 12px;
 }
 .header__location {
   width: 100%;
@@ -106,8 +109,9 @@ a {
   justify-content: center;
 }
 .menus__title {
-  margin: 0px;
+  margin-bottom: 48px;
   font-weight: 700;
+  font-size: 24px;
   text-align: center;
   width: 100%;
   font-family: "Shrikhand", sans-serif;
@@ -120,13 +124,14 @@ a {
   justify-content: center;
 }
 .menus__content {
-  margin: 0px;
+  margin-bottom: 40px;
   text-align: center;
   font-weight: 300;
+  font-size: 18px;
   color: #353535;
 }
 .menus__button {
-  margin-top: 40px;
+  margin-top: 10px;
   width: 218px;
   height: 50px;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
@@ -146,7 +151,7 @@ a {
 
 .fonctionnements {
   width: 100%;
-  height: 440px;
+  height: 390px;
   margin-top: 50px;
 }
 .fonctionnements__section {
@@ -157,17 +162,17 @@ a {
   padding-left: 20px;
 }
 .fonctionnements__description {
-  padding-left: 40px;
-  padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 .fonctionnements__content {
-  padding-left: 40px;
+  padding-left: 35px;
   padding-right: 20px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 26px;
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
+  gap: 28px;
   width: 100%;
   height: 72.38px;
   background-color: #F6F6F6;
@@ -187,8 +192,8 @@ a {
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +201,7 @@ a {
 }
 .fonctionnements__text {
   flex-grow: 1;
-  text-align: center;
+  text-align: start;
   color: black;
   font-weight: bold;
 }
@@ -220,20 +225,22 @@ a {
   font-family: "Shrikhand", sans-serif;
 }
 .restaurants__title {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .restaurants__card {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 16px;
 }
 .restaurants__display-card {
-  width: 100%;
-  margin-top: 18px;
+  display: flex;
 }
 .restaurants .card {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .restaurants .card__image {
@@ -253,7 +260,7 @@ a {
   border-bottom-right-radius: 15px;
 }
 .restaurants .card__txt {
-  width: 100%;
+  width: 89%;
 }
 .restaurants .card__title {
   font-size: 18px;
@@ -269,6 +276,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  bottom: 5px;
   border: none;
   background-color: transparent;
 }
@@ -307,6 +316,7 @@ a {
   background-color: #353535;
   padding: 22px;
   padding-left: 25px;
+  height: 186px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -319,7 +329,7 @@ a {
   justify-content: flex-start;
 }
 .footer__image {
-  height: 18px;
+  height: 17px;
   filter: invert(100%);
 }
 
@@ -332,20 +342,19 @@ a {
   height: 99px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  justify-content: space-between;
 }
 .link__description-logo {
   width: 190px;
   height: 19px;
   color: white;
+  display: flex;
+  gap: 10px;
 }
 .link__description {
   width: 130px;
   height: 20px;
   color: white;
-}
-.link__title {
-  margin-bottom: 7px;
 }
 .link .logo-footer-fork {
   color: white;
@@ -356,7 +365,7 @@ a {
   color: white;
   display: inline-block;
   transform: rotate(135deg);
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .header__link {

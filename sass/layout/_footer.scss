@@ -2,6 +2,7 @@
   background-color: $description-footer-color;
   padding: 22px;
   padding-left: 25px;
+  height: 186px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -15,7 +16,7 @@
   }
 
   &__image {
-    height: 18px;
+    height: 17px;
     filter: invert(100%);
   }
 }
@@ -29,23 +30,21 @@
     height: 99px;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    justify-content: space-between;
   }
 
   &__description-logo {
     width: 190px;
     height: 19px;
     @include link-txt-color;
+    display: flex;
+    gap: 10px;
   }
 
   &__description {
     width: 130px;
     height: 20px;
     @include link-txt-color;
-  }
-
-  &__title {
-    margin-bottom: 7px;
   }
 
   .logo-footer-fork {
@@ -58,6 +57,6 @@
     color: white;
     display: inline-block;
     transform: rotate(135deg);
-    font-size: 13px;
+    font-size: 11px;
   }
 }
